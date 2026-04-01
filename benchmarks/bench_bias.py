@@ -152,9 +152,13 @@ def run_fig2(verbose: bool = True):
     plt.close()
 
 
-if __name__ == "__main__":
-    print("=== Benchmark: Bias comparison (Fig 1 & 2) ===")
+def run(verbose: bool=True):
     print("\n-- Fig 1: Error histograms --")
     run_fig1()
     print("\n-- Fig 2: Bias vs average IP --")
     run_fig2()
+
+
+if __name__ == "__main__":
+    print("=== Benchmark: Bias comparison (Fig 1 & 2) ===")
+    run()
